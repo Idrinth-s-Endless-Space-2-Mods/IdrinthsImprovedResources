@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Simulation.SimulationDescriptor.xsd">
+    <SimulationDescriptor Name="ColonizedStarSystemInfluenceStateRootNone" Type="ColonizedStarSystemInfluenceState">
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="ColonizedStarSystemInfluenceStateRootOwner" Type="ColonizedStarSystemInfluenceState">
+        <!-- Added -->
+        <Modifier TargetProperty="SystemGrowth" Operation="Percent" Value="0.1" Path="ClassColonizedStarSystem"/>
+        <BinaryModifier TargetProperty="NetSystemLifeforce" Operation="Addition" Value="1" Path="ClassColonizedStarSystem"/>
+        <BinaryModifier TargetProperty="PlanetPopulationFood" Operation="Addition" Value="10" Path="ClassColonizedStarSystem/ClassColonizedPlanet"/>
+        <Modifier TargetProperty="PlanetDepletionPerTurn" Operation="Subtraction" Value="0.05" Path="FAKEFORGUI/./ClassPlanet"/>
+        <Modifier TargetProperty="RepletionPerTurn" Operation="Addition" Value="0.05" Path="ClassColonizedStarSystem/ClassPlanet" TooltipHidden="true"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="ColonizedStarSystemInfluenceStateRootOwnerFriend" Type="ColonizedStarSystemInfluenceState">
+        <Modifier TargetProperty="SystemGrowth" Operation="Percent"	Value="0.1"	Path="ClassColonizedStarSystem"/>
+        <BinaryModifier TargetProperty="SystemHappiness" Operation="Addition" BinaryOperation="Multiplication" Left="10" Right="" Path="ClassColonizedStarSystem"/>
+        <!-- Added -->
+        <BinaryModifier TargetProperty="NetSystemLifeforce" Operation="Addition" Value="1" Path="ClassColonizedStarSystem"/>
+        <BinaryModifier TargetProperty="PlanetPopulationFood" Operation="Addition" Value="10" Path="ClassColonizedStarSystem/ClassColonizedPlanet"/>
+        <Modifier TargetProperty="PlanetDepletionPerTurn" Operation="Subtraction" Value="0.025" Path="FAKEFORGUI/./ClassPlanet"/>
+        <Modifier TargetProperty="RepletionPerTurn" Operation="Addition" Value="0.025" Path="ClassColonizedStarSystem/ClassPlanet" TooltipHidden="true"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="ColonizedStarSystemInfluenceStateRootOwnerFoe" Type="ColonizedStarSystemInfluenceState">
+        <Modifier TargetProperty="SystemGrowth" Operation="Percent"	Value="-0.1" Path="ClassColonizedStarSystem"/>
+        <Modifier TargetProperty="SystemHappiness" Operation="Addition"	Value="-10" Path="ClassColonizedStarSystem"/>
+        <!-- Added -->
+        <BinaryModifier TargetProperty="NetSystemLifeforce" Operation="Addition" Value="1" Path="ClassColonizedStarSystem"/>
+        <BinaryModifier TargetProperty="PlanetPopulationFood" Operation="Addition" Value="10" Path="ClassColonizedStarSystem/ClassColonizedPlanet"/>
+        <Modifier TargetProperty="PlanetDepletionPerTurn" Operation="Substraction" Value="0.005" Path="FAKEFORGUI/./ClassPlanet"/>
+        <Modifier TargetProperty="RepletionPerTurn" Operation="Addition" Value="0.005" Path="ClassColonizedStarSystem/ClassPlanet" TooltipHidden="true"/>
+    </SimulationDescriptor>    
+</Datatable>
