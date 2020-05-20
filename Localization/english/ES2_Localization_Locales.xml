@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <LocalizationPair Name="%ModuleSupportFleetLogistics1Title">Bare-Bones Logistics Module</LocalizationPair>
+  <LocalizationPair Name="%ModuleSupportFleetLogistics1EffectOverride">Reduces Upkeep by 5 and 5% on Fleet.</LocalizationPair>
+  <LocalizationPair Name="%ModuleSupportFleetLogistics2Title">Logistics Module</LocalizationPair>
+  <LocalizationPair Name="%ModuleSupportFleetLogistics2EffectOverride">Reduces Upkeep by 10 and 10% on Fleet.</LocalizationPair>
+  <LocalizationPair Name="%ModuleSupportFleetLogistics3Title">Advanced Logistics Module</LocalizationPair>
+  <LocalizationPair Name="%ModuleSupportFleetLogistics3EffectOverride">Reduces Upkeep by 15 and 15% on Fleet.</LocalizationPair>
+  <LocalizationPair Name="%ModuleSupportFleetLogisticsDescription">A module capable of distributing required resources more efficiently within a fleet.</LocalizationPair>
+</Datatable>

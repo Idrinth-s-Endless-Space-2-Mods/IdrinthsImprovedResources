@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Gui.GuiElement.xsd">
+    <ExtendedGuiElement Name="ModuleSupportFleetLogistics1">
+        <Title>%ModuleSupportFleetLogistics1Title</Title>
+        <Description>%ModuleSupportFleetLogisticsDescription</Description>
+        <TooltipElement>
+            <EffectOverride>%ModuleSupportFleetLogistics1EffectOverride</EffectOverride>
+        </TooltipElement>
+    </ExtendedGuiElement>
+    <ExtendedGuiElement Name="ModuleSupportFleetLogistics2">
+        <Title>%ModuleSupportFleetLogistics2Title</Title>
+        <Description>%ModuleSupportFleetLogisticsDescription</Description>
+        <TooltipElement>
+            <EffectOverride>%ModuleSupportFleetLogistics2EffectOverride</EffectOverride>
+        </TooltipElement>
+    </ExtendedGuiElement>
+    <ExtendedGuiElement Name="ModuleSupportFleetLogistics3">
+        <Title>%ModuleSupportFleetLogistics3Title</Title>
+        <Description>%ModuleSupportFleetLogisticsDescription</Description>
+        <TooltipElement>
+            <EffectOverride>%ModuleSupportFleetLogistics3EffectOverride</EffectOverride>
+        </TooltipElement>
+    </ExtendedGuiElement>
+</Datatable>

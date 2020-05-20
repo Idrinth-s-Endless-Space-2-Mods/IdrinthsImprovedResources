@@ -28,7 +28,7 @@
         <!-- Added -->
         <BinaryModifier TargetProperty="NetSystemLifeforce" Operation="Addition" Value="1" Path="ClassColonizedStarSystem"/>
         <BinaryModifier TargetProperty="PlanetPopulationFood" Operation="Addition" Value="10" Path="ClassColonizedStarSystem/ClassColonizedPlanet"/>
-        <Modifier TargetProperty="PlanetDepletionPerTurn" Operation="Substraction" Value="0.005" Path="FAKEFORGUI/./ClassPlanet"/>
+        <Modifier TargetProperty="PlanetDepletionPerTurn" Operation="Subtraction" Value="0.005" Path="FAKEFORGUI/./ClassPlanet"/>
         <Modifier TargetProperty="RepletionPerTurn" Operation="Addition" Value="0.005" Path="ClassColonizedStarSystem/ClassPlanet" TooltipHidden="true"/>
     </SimulationDescriptor>    
 </Datatable>

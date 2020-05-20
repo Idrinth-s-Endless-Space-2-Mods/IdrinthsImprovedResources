@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../../Schemas/ModuleDefinition.xsd">
+    <SupportModule Name="ModuleSupportFleetLogistics1" Family="FleetLogistics" Level="1">
+        <Cost ResourceName="SystemProduction">150</Cost>
+        <TechnologyPrerequisite Flags="Edition">TechnologyStageEconomyAndTrade3</TechnologyPrerequisite>
+        <PathPrerequisite Flags="Edition">ClassShip,ShipRoleHero</PathPrerequisite>
+	<SimulationDescriptorReference Name="ClassModuleSupport"/>
+        <SimulationDescriptorReference Name="ClassModuleHeroShipOnly"/>
+        <SimulationDescriptorReference Name="ClassModuleColonyShipOnly"/>
+	<CategorizedSimulationDescriptors Category="CategoryFleetLogistics">
+            <SimulationDescriptorReference Name="ModuleSupportFleetLogistics1"/>
+        </CategorizedSimulationDescriptors>
+    </SupportModule>
+    <SupportModule Name="ModuleSupportFleetLogistics2" Family="FleetLogistics" Level="2">
+        <Cost ResourceName="SystemProduction">250</Cost>
+        <TechnologyPrerequisite Flags="Edition">TechnologyStageEconomyAndTrade4</TechnologyPrerequisite>
+        <PathPrerequisite Flags="Edition">ClassShip,ShipRoleHero</PathPrerequisite>
+	<SimulationDescriptorReference Name="ClassModuleSupport"/>
+        <SimulationDescriptorReference Name="ClassModuleHeroShipOnly"/>
+        <SimulationDescriptorReference Name="ClassModuleColonyShipOnly"/>
+	<CategorizedSimulationDescriptors Category="CategoryFleetLogistics">
+            <SimulationDescriptorReference Name="ModuleSupportFleetLogistics1"/>
+            <SimulationDescriptorReference Name="ModuleSupportFleetLogistics2"/>
+        </CategorizedSimulationDescriptors>
+    </SupportModule>
+    <SupportModule Name="ModuleSupportFleetLogistics3" Family="FleetLogistics" Level="3">
+        <Cost ResourceName="SystemProduction">300</Cost>
+        <TechnologyPrerequisite Flags="Edition">TechnologyStageEconomyAndTrade5</TechnologyPrerequisite>
+        <PathPrerequisite Flags="Edition">ClassShip,ShipRoleHero</PathPrerequisite>
+	<SimulationDescriptorReference Name="ClassModuleSupport"/>
+        <SimulationDescriptorReference Name="ClassModuleHeroShipOnly"/>
+        <SimulationDescriptorReference Name="ClassModuleColonyShipOnly"/>
+	<CategorizedSimulationDescriptors Category="CategoryFleetLogistics">
+            <SimulationDescriptorReference Name="ModuleSupportFleetLogistics1"/>
+            <SimulationDescriptorReference Name="ModuleSupportFleetLogistics2"/>
+            <SimulationDescriptorReference Name="ModuleSupportFleetLogistics3"/>
+        </CategorizedSimulationDescriptors>
+    </SupportModule>    
+</Datatable>

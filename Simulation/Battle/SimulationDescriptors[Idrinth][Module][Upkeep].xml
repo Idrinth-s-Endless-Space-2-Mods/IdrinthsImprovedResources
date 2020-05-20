@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../../Schemas/Amplitude.Unity.Simulation.SimulationDescriptor.xsd">
+    <SimulationDescriptor Name="ModuleSupportFleetLogistics1" Type="ModuleSupport">
+        <Modifier TargetProperty="GarrisonMoneyUpkeep"           Operation="Subtraction" Value="5"         Path="../ClassGarrison/ClassShip"/>
+        <Modifier TargetProperty="GarrisonMoneyUpkeep"           Operation="Percent" Value="-0.05"         Path="../ClassGarrison/ClassShip"/>
+    </SimulationDescriptor>   
+    <SimulationDescriptor Name="ModuleSupportFleetLogistics2" Type="ModuleSupport">
+        <Modifier TargetProperty="GarrisonMoneyUpkeep"           Operation="Subtraction" Value="10"         Path="../ClassGarrison/ClassShip"/>
+        <Modifier TargetProperty="GarrisonMoneyUpkeep"           Operation="Percent" Value="-0.1"         Path="../ClassGarrison/ClassShip"/>
+    </SimulationDescriptor>  
+    <SimulationDescriptor Name="ModuleSupportFleetLogistics2" Type="ModuleSupport">
+        <Modifier TargetProperty="GarrisonMoneyUpkeep"           Operation="Subtraction" Value="15"         Path="../ClassGarrison/ClassShip"/>
+        <Modifier TargetProperty="GarrisonMoneyUpkeep"           Operation="Percent" Value="-0.15"         Path="../ClassGarrison/ClassShip"/>
+    </SimulationDescriptor>
+</Datatable>
