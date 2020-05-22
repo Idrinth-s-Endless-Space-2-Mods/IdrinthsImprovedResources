@@ -7,4 +7,8 @@
   <LocalizationPair Name="%ModuleSupportFleetLogistics3Title">Advanced Logistics Module</LocalizationPair>
   <LocalizationPair Name="%ModuleSupportFleetLogistics3EffectOverride">Reduces Upkeep by 15 and 15% on Fleet.</LocalizationPair>
   <LocalizationPair Name="%ModuleSupportFleetLogisticsDescription">A module capable of distributing required resources more efficiently within a fleet.</LocalizationPair>
+
+  <LocalizationPair Name="%ColonizedStarSystemInfluenceStateRootOwnerTitle">Celestial Vine Network</LocalizationPair>
+  <LocalizationPair Name="%ColonizedStarSystemInfluenceStateRootOwnerFriendTitle">Celestial Vine Network</LocalizationPair>
+  <LocalizationPair Name="%ColonizedStarSystemInfluenceStateRootOwnerFoeTitle">Celestial Vine Network</LocalizationPair>
 </Datatable>
