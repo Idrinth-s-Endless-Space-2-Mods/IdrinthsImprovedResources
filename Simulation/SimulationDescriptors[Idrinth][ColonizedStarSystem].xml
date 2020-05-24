@@ -2,7 +2,13 @@
 <Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Simulation.SimulationDescriptor.xsd">
 
     <SimulationDescriptor Name="ClassColonizedStarSystem" Type="ClassColonizedStarSystem">
-
+        <!--ADDED-->
+        <!-- POLITICAL REWORK COMPATIBILITY-->
+        <Property Name="IsNotAtWar" BaseValue="1" MinValue="0"/>
+        <Property Name="IsAtWar" BaseValue="0" MaxValue="1"/>
+        <Property Name="CuriositiesDiscovered" BaseValue="0"/>
+        <Property Name="WarsWon" BaseValue="0" MaxValue="1"/>
+        <!--/ADDED-->
         <!-- ########################################################## -->
         <!-- ######################## PROPERTY ######################## -->
         <!-- ########################################################## -->
