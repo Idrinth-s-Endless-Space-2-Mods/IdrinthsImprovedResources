@@ -6,8 +6,6 @@
         <TooltipElement>
             <EffectOverride>%ModuleSupportFleetLogistics1EffectOverride</EffectOverride>
         </TooltipElement>
-        <Icons></Icons>
-        <Sounds></Sounds>
     </ExtendedGuiElement>
     <ExtendedGuiElement Name="ModuleSupportFleetLogistics2">
         <Title>%ModuleSupportFleetLogistics2Title</Title>
@@ -15,8 +13,6 @@
         <TooltipElement>
             <EffectOverride>%ModuleSupportFleetLogistics2EffectOverride</EffectOverride>
         </TooltipElement>
-        <Icons></Icons>
-        <Sounds></Sounds>
     </ExtendedGuiElement>
     <ExtendedGuiElement Name="ModuleSupportFleetLogistics3">
         <Title>%ModuleSupportFleetLogistics3Title</Title>
@@ -24,7 +20,5 @@
         <TooltipElement>
             <EffectOverride>%ModuleSupportFleetLogistics3EffectOverride</EffectOverride>
         </TooltipElement>
-        <Icons></Icons>
-        <Sounds></Sounds>
     </ExtendedGuiElement>
 </Datatable>
