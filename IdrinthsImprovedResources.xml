@@ -46,6 +46,9 @@ Other Mods: Load After Political Rework + Patch
                     </ExtraTypes>
                     <FilePath>Gui/GuiElements[Idrinth][*].xml</FilePath>
             </DatabasePlugin>
+            <RegistryPlugin>
+                <FilePath>Registry.xml</FilePath>
+            </RegistryPlugin>
         </Plugins>
     </RuntimeModule>
 </Datatable>

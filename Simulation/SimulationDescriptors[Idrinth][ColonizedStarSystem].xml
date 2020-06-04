@@ -1008,7 +1008,11 @@
         <Modifier TargetProperty="PlanetRawFood"                                            Operation="Addition"    Value="$(RecipeIngredientEffectTier2Luxury9)"                   Path="ClassColonizedStarSystem/ClassColonizedPlanet"/>
         <Modifier TargetProperty="PlanetRawIndustry"                                        Operation="Addition"    Value="$(RecipeIngredientEffectTier2Luxury10)"                  Path="ClassColonizedStarSystem/ClassColonizedPlanet"/>
         <Modifier TargetProperty="PlanetRawDust"                                            Operation="Addition"    Value="$(RecipeIngredientEffectTier2Luxury11)"                  Path="ClassColonizedStarSystem/ClassColonizedPlanet"/>
-        <BinaryModifier TargetProperty="PlanetRawScience" Operation="Addition" Left="$(RecipeIngredientEffectTier2Luxury12)" BinaryOperation="Multiplication" Right="$(CanUseRawPlanetScience)"/>
+        <!-- REMOVED -->
+        <!--<BinaryModifier TargetProperty="PlanetRawScience" Operation="Addition" Left="$(RecipeIngredientEffectTier2Luxury12)" BinaryOperation="Multiplication" Right="$(CanUseRawPlanetScience)"/>-->
+        <!-- ADDED -->
+        <BinaryModifier TargetProperty="PlanetRawScience" Operation="Addition" Left="$(RecipeIngredientEffectTier2Luxury12)" BinaryOperation="Multiplication" Right="$(CanUseRawPlanetScience)"                  Path="ClassColonizedStarSystem/ClassColonizedPlanet"/>
+        <!-- /ADDED -->
         <BinaryModifier TargetProperty="NetSystemResearch" Operation="Percent" Left="$(RecipeIngredientEffectTier2Luxury12Bis)" BinaryOperation="Multiplication" Right="$(CannotUseRawPlanetScience)"/>
         <Modifier TargetProperty="SystemFIDSFlat"                                           Operation="Addition"    Value="$(RecipeIngredientEffectTier1Luxury6FIDSHisshos)"        Path="ClassColonizedStarSystem"/>
         <Modifier TargetProperty="PlanetRawPrestige"                                        Operation="Addition"    Value="$(RecipeIngredientEffectTier2Luxury13)"                  Path="ClassColonizedStarSystem/ClassColonizedPlanet"/>

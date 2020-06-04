@@ -8,27 +8,25 @@
         <Modifier TargetProperty="SystemGrowth" Operation="Percent" Value="0.1" Path="ClassColonizedStarSystem"/>
         <Modifier TargetProperty="NetSystemLifeforce" Operation="Addition" Value="1" Path="ClassColonizedStarSystem"/>
         <Modifier TargetProperty="PlanetPopulationFood" Operation="Addition" Value="10" Path="ClassColonizedStarSystem/ClassColonizedPlanet"/>
-        <Modifier TargetProperty="PlanetDepletionPerTurn" Operation="Subtraction" Value="0.05" Path="FAKEFORGUI/./ClassPlanet"/>
-        <Modifier TargetProperty="RepletionPerTurn" Operation="Addition" Value="0.05" Path="ClassColonizedStarSystem/ClassPlanet"/>
+        <Modifier TargetProperty="PlanetDepletionPerTurn" Operation="Subtraction" Value="0.05" Path="ClassColonizedStarSystem/ClassPlanet"/>
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="ColonizedStarSystemInfluenceStateRootOwnerFriend" Type="ColonizedStarSystemInfluenceState">
         <Modifier TargetProperty="SystemGrowth" Operation="Percent"	Value="0.1"	Path="ClassColonizedStarSystem"/>
-        <Modifier TargetProperty="SystemHappiness" Operation="Addition" Value="10" Path="ClassColonizedStarSystem"/>
+        <!-- REMOVED -->
+        <!--<Modifier TargetProperty="Happiness" Operation="Addition" Value="10" Path="ClassColonizedStarSystem"/>-->
         <!-- Added -->
+        <Modifier TargetProperty="Happiness" Operation="Addition" Value="5" Path="ClassColonizedStarSystem"/>
         <Modifier TargetProperty="NetSystemLifeforce" Operation="Addition" Value="1" Path="ClassColonizedStarSystem"/>
         <Modifier TargetProperty="PlanetPopulationFood" Operation="Addition" Value="10" Path="ClassColonizedStarSystem/ClassColonizedPlanet"/>
-        <Modifier TargetProperty="PlanetDepletionPerTurn" Operation="Subtraction" Value="0.025" Path="FAKEFORGUI/./ClassPlanet"/>
-        <Modifier TargetProperty="RepletionPerTurn" Operation="Addition" Value="0.025" Path="ClassColonizedStarSystem/ClassPlanet"/>
+        <Modifier TargetProperty="PlanetDepletionPerTurn" Operation="Subtraction" Value="0.05" Path="ClassColonizedStarSystem/ClassPlanet"/>
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="ColonizedStarSystemInfluenceStateRootOwnerFoe" Type="ColonizedStarSystemInfluenceState">
         <Modifier TargetProperty="SystemGrowth" Operation="Percent"	Value="-0.1" Path="ClassColonizedStarSystem"/>
-        <Modifier TargetProperty="SystemHappiness" Operation="Addition"	Value="-10" Path="ClassColonizedStarSystem"/>
+        <!-- REMOVED -->
+        <!--<Modifier TargetProperty="Happiness" Operation="Addition" Value="-10" Path="ClassColonizedStarSystem"/>-->
         <!-- Added -->
-        <Modifier TargetProperty="NetSystemLifeforce" Operation="Addition" Value="1" Path="ClassColonizedStarSystem"/>
-        <Modifier TargetProperty="PlanetPopulationFood" Operation="Addition" Value="10" Path="ClassColonizedStarSystem/ClassColonizedPlanet"/>
-        <Modifier TargetProperty="PlanetDepletionPerTurn" Operation="Subtraction" Value="0.005" Path="FAKEFORGUI/./ClassPlanet"/>
-        <Modifier TargetProperty="RepletionPerTurn" Operation="Addition" Value="0.005" Path="ClassColonizedStarSystem/ClassPlanet"/>
+        <Modifier TargetProperty="Happiness" Operation="Subtraction" Value="10" Path="ClassColonizedStarSystem"/>
     </SimulationDescriptor>
 </Datatable>
