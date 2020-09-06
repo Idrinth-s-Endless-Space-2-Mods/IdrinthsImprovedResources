@@ -12,6 +12,8 @@
                     <TradingCompanyStructureDestructionDelay>10</TradingCompanyStructureDestructionDelay><!-- 5 -->
                     <TradingRouteLengthModifierFormula>Sqrt($(PathLength)^2 + $(PathLength))/Sqrt(2)</TradingRouteLengthModifierFormula>
                     <!-- Min((1 + $(PathLength) / 5), (1+1.2*(Logn($(PathLength)^2)))) -->
+                    <TradingCompanyIncomeMultiplierFormula>1 + Pow(Property(TradingCompany, Level) / 35, 0.75) + Property(TradingCompany, Level)/100</TradingCompanyIncomeMultiplierFormula>
+                    <!-- 0.75 + Pow(Property(TradingCompany, Level) / 35, 0.75) -->
                 </DepartmentOfCommerce>
                 <DepartmentOfDefense>
                     <RepairCostFormula>(0.25 + 0.25 * Count(Ship, @'ClassShip,ShipRoleSuperColonizer')) * (Property(Ship, @ClassShip, MaximumHealth) - Property(Ship, @ClassShip, Health)) * (1 + (Property(Ship, @ClassShip, MaximumHealth) - Property(Ship, @ClassShip, Health)) / Property(Ship, @ClassShip, MaximumHealth)) * Property(Empire, @ClassEmpire, GameSpeedMultiplier) * Property(Empire, @ClassEmpire, DustInflation) + 100 * Property(Empire, @ClassEmpire, DustInflation) * Property(Empire, @ClassEmpire, DustInflation) * Count(Ship, @'ClassShip,ShipStateLockedInGarrisonFromDamage')</RepairCostFormula>
